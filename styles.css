@@ -1,0 +1,78 @@
+body {
+    background-color: #001f3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;        
+}
+
+.grid-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    margin-top: 2rem;
+}
+
+.green {
+    background-color: green;
+    border-radius: 30px;
+}
+
+.red {
+    background-color: red;
+    border-radius: 30px;
+}
+
+.yellow {
+    background-color: yellow;
+    border-radius: 30px;
+}
+
+.blue {
+    background-color: blue;
+    border-radius: 30px;
+}
+
+.grid-container > * {
+    border: 10px solid black;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #fff7c5;
+    font-size: 48px;
+}
+
+
+.flash {
+    animation: flash-animation 0.35s ease-out forwards;
+}
+
+@keyframes flash-animation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.15);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.game-over {
+    background-color: red;
+}
+
+.grey {
+    background-color: grey;
+}
