@@ -45,7 +45,6 @@ function checkAnswer() {
     }
 }
 
-
 function nextLevel(){
 
     let randomChosenColor = nextRandomColor();
@@ -77,7 +76,6 @@ document.addEventListener("keydown", function(event){
 
 })
 
-
 for(var i = 0; i < totalButtons; i++){
 
     document.querySelectorAll("button")[i].addEventListener("click", function(){
@@ -102,7 +100,5 @@ for(var i = 0; i < totalButtons; i++){
             }
 
         }
-
     });
-
 }

@@ -18,26 +18,23 @@ body {
 
 .green {
     background-color: green;
-    border-radius: 30px;
 }
 
 .red {
     background-color: red;
-    border-radius: 30px;
 }
 
 .yellow {
     background-color: yellow;
-    border-radius: 30px;
 }
 
 .blue {
     background-color: blue;
-    border-radius: 30px;
 }
 
 .grid-container > * {
     border: 10px solid black;
+    border-radius: 30px;
 }
 
 h1 {
